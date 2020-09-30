@@ -57,6 +57,11 @@ body {
   color: #102746;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* =========
 Header 
 =========== */
@@ -157,4 +162,71 @@ Hero
 .search-form_submit:focus,
 .search-form_submit:active {
   background: #1a69d1;
+}
+/* ==========
+BENEFITS
+============= */
+.benefits {
+  margin-bottom: 131px;
+}
+.benefits_wrap {
+  max-width: 1262px;
+  background: white;
+  margin: 0 auto;
+  box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+  position: relative;
+}
+.benefits_title {
+  width: 100%;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 42px;
+  padding: 93px 100px 88px 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  background-color: white;
+}
+.benefits_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 55px;
+  padding: 0 100px;
+}
+.benefits-card {
+  grid-column: span 1;
+  margin-bottom: 112px;
+}
+.benefits_card-pic {
+  max-width: 66px;
+  margin-bottom: 37px;
+}
+.benefits-card-thumb {
+  display: block;
+}
+.benefits_card-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 26px;
+}
+.benefits-card-desc {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 39px;
+}
+.benefits_card-more {
+  display: inline-block;
+  padding-right: 59px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #006dfe;
+  text-decoration: none;
+  background: url(../images/svg/arrow-icon.svg) no-repeat 95% center;
+  transition: 0.2s background;
+}
+.benefits_card-more:hover,
+.benefits_card-more:focus {
+  background: url(../images/svg/arrow-icon.svg) no-repeat right center;
 }
