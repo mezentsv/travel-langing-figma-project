@@ -1,0 +1,160 @@
+/* =========
+Fonts
+============ */
+/* lato-regular - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"),
+    url("../fonts/lato-v17-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/lato-v17-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-700 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Lato Bold"), local("Lato-Bold"),
+    url("../fonts/lato-v17-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/lato-v17-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-900 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Lato Black"), local("Lato-Black"),
+    url("../fonts/lato-v17-latin-900.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/lato-v17-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* ========
+Globals
+============ */
+
+/* box-sizing */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.wrapper {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+body {
+  font-family: Lato;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: normal;
+  color: #102746;
+}
+
+/* =========
+Header 
+=========== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 56px;
+}
+.header-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.header-item {
+  margin-right: 82px;
+}
+.header-item:last-child {
+  margin-right: 0;
+}
+.header-link {
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  text-decoration: none;
+}
+.header-link:hover,
+.header-link:focus,
+.header-link:active {
+  opacity: 0.75;
+}
+
+/* ==========
+Hero
+============= */
+
+.hero {
+  min-height: 100vh;
+  background: url(../images/hero-bg.jpg) no-repeat center;
+  background-size: cover;
+  padding-top: 263px;
+}
+.hero-title {
+  max-width: 619px;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 60px;
+  color: white;
+  margin-bottom: 22px;
+}
+.hero-subtitle {
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 546px;
+  margin-bottom: 59px;
+}
+
+.search-form_info {
+  display: flex;
+  flex-wrap: wrap;
+}
+.search-form_field {
+  background: transparent url(../images/svg/circle-icon.svg) no-repeat left 6px;
+  background-size: 20px;
+  border: 0;
+  border-bottom: 2px solid #bfc0c5;
+  margin-right: 60px;
+  width: 297px;
+  padding-left: 43px;
+  padding-bottom: 22px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+.search-form_field::placeholder {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+.search-form_submit {
+  padding: 15px 39px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 25px;
+  color: white;
+  background: #1b7dff;
+  border: 0;
+}
+
+.search-form_submit:hover,
+.search-form_submit:focus,
+.search-form_submit:active {
+  background: #1a69d1;
+}
