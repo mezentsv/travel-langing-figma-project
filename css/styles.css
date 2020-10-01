@@ -345,3 +345,43 @@ Places
 .places_card-small {
   grid-column: span 2;
 }
+/*==========
+Tours
+============ */
+.tours {
+  margin-bottom: 139px;
+}
+.tours-tour {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 108px;
+  align-items: center;
+  margin-bottom: 77px;
+}
+.tour_title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 85px;
+}
+.tour_desc {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 58px;
+}
+.tour_info {
+  padding-left: 47px;
+}
+.tour_more {
+  font-size: 16px;
+  color: #006def;
+  text-decoration: none;
+  background: url(../images/svg/arrow-icon.svg) no-repeat 95% center;
+  padding-right: 59px;
+  transition: 0.5s all;
+}
+
+.tour_more:hover,
+.tour_more:focus {
+  background: url(../images/svg/arrow-icon.svg) no-repeat right center;
+}
