@@ -385,3 +385,86 @@ Tours
 .tour_more:focus {
   background: url(../images/svg/arrow-icon.svg) no-repeat right center;
 }
+/*==========
+Recommendation
+============ */
+.recommendation {
+  margin-bottom: 86px;
+}
+
+.recommendation_title {
+  margin-bottom: 54px;
+}
+.recommendation-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.recommendation_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 57px;
+}
+
+.recommendation_card-pic {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.recommendation_card-stats {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(21, 24, 36, 0.6);
+  padding: 16px 25px;
+}
+
+.recommendation_card-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  margin: 0 auto 0 0;
+}
+.recommendation_card-likes {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  padding-right: 20px;
+  background: url(../images/svg/heart.svg) no-repeat right;
+  margin-right: 14px;
+}
+.recommendation_card-comments {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  padding-right: 23px;
+  background: url(../images/svg/comments.svg) no-repeat right;
+}
+.recommendation_card-desc {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 31px;
+}
+.recommendation_card-more {
+  width: 118px;
+  padding: 12px 19px;
+  text-decoration: none;
+  font-size: 16px;
+  background: #006dfe;
+  color: white;
+  transition: 0.2s all;
+  margin: auto 0 0 0;
+}
+.recommendation_card-more:hover,
+.recommendation_card-more:focus,
+.recommendation_card-more:active {
+  background: #1a69d1;
+}
