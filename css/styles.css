@@ -93,6 +93,12 @@ Header
   top: 0;
   left: 0;
   width: 100%;
+  transition: 0.2s linear;
+  padding-bottom: 20px;
+  z-index: 99;
+}
+.header_active {
+  background-color: rgb(14, 29, 40, 0.6);
 }
 .header-wrapper {
   display: flex;
@@ -467,4 +473,26 @@ Recommendation
 .recommendation_card-more:focus,
 .recommendation_card-more:active {
   background: #1a69d1;
+}
+
+/* ==========
+Videos
+============= */
+.videos {
+  width: 100%;
+}
+.videos-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+.video-item {
+  padding-top: 56.25%;
+}
+.video-element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
