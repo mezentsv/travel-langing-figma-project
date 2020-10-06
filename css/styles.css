@@ -47,11 +47,13 @@ html {
 .wrapper {
   max-width: 1060px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .wrapper-big {
   max-width: 1262px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .section-title {
   font-weight: 500;
