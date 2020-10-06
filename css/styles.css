@@ -496,3 +496,41 @@ Videos
   width: 100%;
   height: 100%;
 }
+/* ========
+Footer
+=========== */
+.footer {
+  background: #0e1d28;
+  padding: 199px 0;
+}
+.footer-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-logo {
+  width: 50%;
+}
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 50%;
+}
+.footer-menu-title {
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+.footer-menu-link {
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  transition: 0.2s all;
+}
+.footer-menu-link:hover,
+.footer-menu-link:active,
+.footer-menu-link:focus {
+  opacity: 0.6;
+}
