@@ -385,7 +385,7 @@ Tours
 .tours-tour {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 0 108px;
+  grid-column-gap: 0 108px;
   align-items: center;
   margin-bottom: 77px;
 }
@@ -562,6 +562,57 @@ Footer
 /* ==========
 Media Queries  
 ============*/
+
+@media screen and (max-width: 960px) {
+  .search-form_field {
+    margin-bottom: 25px;
+  }
+  .benefits {
+    margin-bottom: 75px;
+  }
+  .benefits_wrap {
+    box-shadow: none;
+  }
+  .benefits_cards {
+    padding: 0 15px;
+    column-gap: 35px;
+  }
+  .benefits_card {
+    margin-bottom: 60px;
+  }
+  .benefits_title {
+    padding: 55px 15px;
+  }
+  .places_card-lg {
+    grid-column: span 6;
+  }
+  .places_card-small {
+    grid-column: span 6;
+  }
+  .tours-tour {
+    grid-column-gap: 15px;
+  }
+  .tour_info {
+    padding-left: 0;
+  }
+  .tour_title {
+    margin-bottom: 35px;
+  }
+  .tour_desc {
+    margin-bottom: 15px;
+  }
+  .recommendation_cards {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+    row-gap: 55px;
+  }
+  .recommendation_card-pic {
+    margin-bottom: 25px;
+  }
+  .footer {
+    padding: 60px;
+  }
+}
 @media screen and (max-width: 767px) {
   .header-burger {
     display: block;
