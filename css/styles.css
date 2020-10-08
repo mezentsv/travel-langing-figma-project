@@ -181,6 +181,9 @@ Hero
   margin-bottom: 59px;
 }
 
+.search-form {
+  margin-bottom: 25px;
+}
 .search-form_info {
   display: flex;
   flex-wrap: wrap;
