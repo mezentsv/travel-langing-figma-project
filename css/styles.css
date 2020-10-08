@@ -160,7 +160,7 @@ Hero
 
 .hero {
   min-height: 100vh;
-  background: url(../images/hero-bg.jpg) no-repeat center;
+  background: url(../images/hero-bg-min.jpg) no-repeat center;
   background-size: cover;
   padding-top: 263px;
   padding-bottom: 223px;
@@ -194,6 +194,26 @@ Hero
   width: 297px;
   padding-left: 43px;
   padding-bottom: 22px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+.search-form_field::-webkit-input-placeholder {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+.search-form_field::-moz-placeholder {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+.search-form_field:-ms-input-placeholder {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+.search-form_field::-ms-input-placeholder {
   font-size: 18px;
   font-weight: 500;
   color: #fff;
@@ -246,6 +266,7 @@ BENEFITS
 .benefits_cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 55px;
   column-gap: 55px;
   padding: 0 100px;
 }
@@ -349,9 +370,11 @@ Places
 }
 .places_card-pic_lg {
   height: 354px;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 .places_card-pic_small {
+  -o-object-fit: cover;
   object-fit: cover;
   height: 283px;
 }
@@ -575,6 +598,7 @@ Media Queries
   }
   .benefits_cards {
     padding: 0 15px;
+    -moz-column-gap: 35px;
     column-gap: 35px;
   }
   .benefits_card {
@@ -603,6 +627,7 @@ Media Queries
   }
   .recommendation_cards {
     grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 25px;
     column-gap: 25px;
     row-gap: 55px;
   }
@@ -712,6 +737,18 @@ Media Queries
     padding-bottom: 12px;
     background: transparent url(../images/svg/circle-icon.svg) no-repeat left
       2px;
+  }
+  .search-form_field::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .search-form_field::-moz-placeholder {
+    font-size: 16px;
+  }
+  .search-form_field:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .search-form_field::-ms-input-placeholder {
+    font-size: 16px;
   }
   .search-form_field::placeholder {
     font-size: 16px;
